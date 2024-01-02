@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+}
+
+.container {
+  width: 100vw;  /*요소의 너비를 viewport 너비와 동일하게 설정*/
+  height: 100vh; /*요소의 높이를 viewport 높이와 동일하게 설정*/
+  font-size: 1rem;  /*inline-block에서 발생하는 공백을 제거하기 위해 사용*/
+  display: inline-block;
+  text-align: center;
+}
+
+.header, .footer {
+  height: 10vh;
+  line-height: 10vh;     /* line-height : 줄간 맞추는 css 속성으로, height값과 동일할 경우 중앙정렬됨*/
+  background-color: #5ed7ff;
+}
+
+/*aside와 main을 묶은 클래스*/
+.content {
+  width: 100%;
+  height: 80vh;
+  line-height: 80vh;   
+}
+
+.aside-a {
+  float:left;  /*div는 block 속성이므로 float를 사용해 요소를 띄우고 왼쪽으로 정렬함*/
+  background-color: #dff3fd;
+  width: 10%;
+}
+
+.main {
+  float:left;
+  width: 80%;
+}
+
+.aside-b {
+  float:left;
+  background-color: #dff3fd;
+  width: 10%;
+}
+
